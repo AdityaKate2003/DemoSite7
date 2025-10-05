@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments - CityCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CityCare Hospital</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="departments.html" class="active">Departments</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div class="container hero-content">
+            <h1>Our Departments</h1>
+            <p>Specialized care across multiple medical disciplines</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Medical Services</h2>
+                <p>Comprehensive healthcare solutions for all your needs</p>
+            </div>
+            <div class="department-grid">
+                <div class="department-card fade-in" onclick="openDepartmentModal('cardiology')">
+                    <div class="department-image">
+                        <i class="fas fa-heartbeat"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Cardiology</h3>
+                        <p>Expert heart care with advanced diagnostic and treatment facilities.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('orthopedics')">
+                    <div class="department-image">
+                        <i class="fas fa-bone"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Orthopedics</h3>
+                        <p>Comprehensive bone and joint care with minimally invasive procedures.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('pediatrics')">
+                    <div class="department-image">
+                        <i class="fas fa-baby"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Pediatrics</h3>
+                        <p>Specialized healthcare for children from infancy through adolescence.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('neurology')">
+                    <div class="department-image">
+                        <i class="fas fa-brain"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Neurology</h3>
+                        <p>Advanced treatment for brain and nervous system disorders.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('emergency')">
+                    <div class="department-image">
+                        <i class="fas fa-ambulance"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Emergency Care</h3>
+                        <p>24/7 emergency services with rapid response and expert care.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('radiology')">
+                    <div class="department-image">
+                        <i class="fas fa-x-ray"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Radiology</h3>
+                        <p>State-of-the-art imaging services including MRI, CT, and ultrasound.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('surgery')">
+                    <div class="department-image">
+                        <i class="fas fa-procedures"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>General Surgery</h3>
+                        <p>Experienced surgeons performing a wide range of surgical procedures.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('gynecology')">
+                    <div class="department-image">
+                        <i class="fas fa-user-md"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Gynecology</h3>
+                        <p>Comprehensive women's health services and maternity care.</p>
+                    </div>
+                </div>
+
+                <div class="department-card fade-in" onclick="openDepartmentModal('dermatology')">
+                    <div class="department-image">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <div class="department-overlay">
+                            <p><i class="fas fa-info-circle"></i> Click to learn more</p>
+                        </div>
+                    </div>
+                    <div class="department-info">
+                        <h3>Dermatology</h3>
+                        <p>Expert skin care and treatment for various dermatological conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="departmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeDepartmentModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CityCare Hospital</h3>
+                    <p>Providing compassionate care and medical excellence since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@citycarehospital.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        const departmentData = {
+            cardiology: {
+                title: 'Cardiology Department',
+                icon: 'fa-heartbeat',
+                description: 'Our Cardiology Department offers comprehensive cardiac care with state-of-the-art technology and experienced cardiologists.',
+                services: ['ECG & Echocardiography', 'Cardiac Catheterization', 'Angioplasty & Stenting', 'Heart Surgery', 'Cardiac Rehabilitation'],
+                specialists: '8 Expert Cardiologists',
+                hours: '24/7 Emergency Cardiac Care'
+            },
+            orthopedics: {
+                title: 'Orthopedics Department',
+                icon: 'fa-bone',
+                description: 'Specializing in the treatment of musculoskeletal conditions, injuries, and disorders affecting bones, joints, and muscles.',
+                services: ['Joint Replacement Surgery', 'Sports Medicine', 'Fracture Care', 'Arthroscopy', 'Spine Surgery'],
+                specialists: '6 Orthopedic Surgeons',
+                hours: 'Mon-Sat: 8:00 AM - 8:00 PM'
+            },
+            pediatrics: {
+                title: 'Pediatrics Department',
+                icon: 'fa-baby',
+                description: 'Dedicated to providing comprehensive healthcare for children from birth through adolescence in a child-friendly environment.',
+                services: ['Well-Child Checkups', 'Vaccinations', 'Growth Monitoring', 'Pediatric Emergency Care', 'Developmental Assessments'],
+                specialists: '10 Pediatricians',
+                hours: '24/7 Pediatric Emergency'
+            },
+            neurology: {
+                title: 'Neurology Department',
+                icon: 'fa-brain',
+                description: 'Advanced diagnosis and treatment of disorders affecting the brain, spinal cord, and nervous system.',
+                services: ['Stroke Care', 'Epilepsy Treatment', 'Neuroimaging', 'Neurosurgery', 'Pain Management'],
+                specialists: '5 Neurologists',
+                hours: 'Mon-Fri: 9:00 AM - 6:00 PM'
+            },
+            emergency: {
+                title: 'Emergency Care',
+                icon: 'fa-ambulance',
+                description: 'Round-the-clock emergency medical services with rapid response times and expert critical care specialists.',
+                services: ['Trauma Care', 'Critical Care', 'Emergency Surgery', 'Ambulance Services', 'Poison Control'],
+                specialists: 'Dedicated Emergency Team',
+                hours: '24/7 Emergency Services'
+            },
+            radiology: {
+                title: 'Radiology Department',
+                icon: 'fa-x-ray',
+                description: 'State-of-the-art imaging services providing accurate diagnosis through advanced technology.',
+                services: ['MRI Scans', 'CT Scans', 'Ultrasound', 'X-Ray', 'Mammography'],
+                specialists: '4 Radiologists',
+                hours: 'Mon-Sat: 7:00 AM - 9:00 PM'
+            },
+            surgery: {
+                title: 'General Surgery',
+                icon: 'fa-procedures',
+                description: 'Experienced surgical team performing a wide range of procedures with minimally invasive techniques.',
+                services: ['Laparoscopic Surgery', 'General Surgery', 'Endoscopy', 'Hernia Repair', 'Appendectomy'],
+                specialists: '7 Surgeons',
+                hours: '24/7 Emergency Surgery'
+            },
+            gynecology: {
+                title: 'Gynecology & Obstetrics',
+                icon: 'fa-user-md',
+                description: 'Comprehensive women\'s health services including maternity care and gynecological treatments.',
+                services: ['Prenatal Care', 'Delivery Services', 'Gynecological Surgery', 'Family Planning', 'Menopause Management'],
+                specialists: '6 OB/GYN Specialists',
+                hours: '24/7 Maternity Services'
+            },
+            dermatology: {
+                title: 'Dermatology Department',
+                icon: 'fa-hand-sparkles',
+                description: 'Expert diagnosis and treatment of skin, hair, and nail conditions with both medical and cosmetic services.',
+                services: ['Skin Disease Treatment', 'Acne Management', 'Cosmetic Dermatology', 'Laser Treatments', 'Skin Cancer Screening'],
+                specialists: '3 Dermatologists',
+                hours: 'Mon-Sat: 9:00 AM - 6:00 PM'
+            }
+        };
+
+        function openDepartmentModal(dept) {
+            const data = departmentData[dept];
+            const modal = document.getElementById('departmentModal');
+            const content = document.getElementById('modalContent');
+            
+            content.innerHTML = `
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div style="width: 100px; height: 100px; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 3rem; color: white;">
+                        <i class="fas ${data.icon}"></i>
+                    </div>
+                    <h2 style="color: var(--primary-blue); margin-bottom: 0.5rem;">${data.title}</h2>
+                    <p style="color: var(--text-light);">${data.description}</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 1rem;"><i class="fas fa-list"></i> Services Offered</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        ${data.services.map(service => `<li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;"><i class="fas fa-check" style="color: var(--secondary-blue); margin-right: 0.5rem;"></i>${service}</li>`).join('')}
+                    </ul>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+                    <div style="background: var(--light-blue); padding: 1rem; border-radius: 8px;">
+                        <p><i class="fas fa-user-md"></i> <strong>${data.specialists}</strong></p>
+                    </div>
+                    <div style="background: var(--light-blue); padding: 1rem; border-radius: 8px;">
+                        <p><i class="fas fa-clock"></i> <strong>${data.hours}</strong></p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+        }
+
+        function closeDepartmentModal() {
+            document.getElementById('departmentModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('departmentModal');
+            if (event.target == modal) {
+                closeDepartmentModal();
+            }
+        }
+    </script>
+</body>
+</html>

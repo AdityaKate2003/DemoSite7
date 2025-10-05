@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CityCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CityCare Hospital</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div class="container hero-content">
+            <h1>About CityCare Hospital</h1>
+            <p>Committed to excellence in healthcare</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Story</h2>
+                <p>Building healthier communities since 2005</p>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; line-height: 1.8;">
+                <p class="fade-in" style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 1.5rem;">
+                    CityCare Hospital was founded with a simple yet powerful mission: to provide world-class healthcare services with compassion and dedication. Over the past 20 years, we have grown from a small community clinic to a leading healthcare institution serving thousands of patients annually.
+                </p>
+                <p class="fade-in" style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 1.5rem;">
+                    Our state-of-the-art facility combines cutting-edge medical technology with a patient-centered approach. We believe that every patient deserves personalized care, respect, and the highest medical standards.
+                </p>
+                <div class="fade-in" style="margin-top: 2rem;">
+                    <button class="btn btn-primary" onclick="openVideoModal()">
+                        <i class="fas fa-play"></i> Watch Our Story
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--light-blue);">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Mission & Values</h2>
+                <p>Principles that guide everything we do</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassion</h3>
+                    <p>We treat every patient with empathy, kindness, and respect, ensuring they feel cared for during their healthcare journey.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>We strive for the highest standards in medical care, continuously improving our services and staying current with medical advances.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We maintain honesty and transparency in all our interactions, building trust with patients and their families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Journey</h2>
+                <p>Milestones in our commitment to healthcare</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2005</div>
+                        <h3>Foundation</h3>
+                        <p>CityCare Hospital was founded with a vision to provide accessible, high-quality healthcare to the community.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2010</div>
+                        <h3>Expansion</h3>
+                        <p>Opened our state-of-the-art cardiac care center, serving over 1,000 patients in the first year.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2015</div>
+                        <h3>Recognition</h3>
+                        <p>Received national accreditation for excellence in patient care and safety standards.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <h3>Innovation</h3>
+                        <p>Launched telemedicine services and advanced robotic surgery capabilities.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>Excellence Milestone</h3>
+                        <p>Celebrated 20 years of service with over 15,000 patients served and 25 prestigious awards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Impact</h2>
+                <p>Numbers that reflect our commitment</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Patients Served</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-label">Successful Surgeries</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Patient Satisfaction %</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+            <h2 style="color: var(--primary-blue); margin-bottom: 1rem;">Our Story</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CityCare Hospital</h3>
+                    <p>Providing compassionate care and medical excellence since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@citycarehospital.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function openVideoModal() {
+            document.getElementById('videoModal').style.display = 'block';
+        }
+
+        function closeVideoModal() {
+            document.getElementById('videoModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('videoModal');
+            if (event.target == modal) {
+                closeVideoModal();
+            }
+        }
+    </script>
+</body>
+</html>

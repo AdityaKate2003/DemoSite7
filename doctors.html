@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - CityCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CityCare Hospital</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="doctors.html" class="active">Our Doctors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div class="container hero-content">
+            <h1>Meet Our Expert Team</h1>
+            <p>Experienced physicians dedicated to your health and wellbeing</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Medical Professionals</h2>
+                <p>Board-certified specialists with years of experience</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Doctors</button>
+                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+                <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+                <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+                <button class="filter-btn" data-filter="neurology">Neurology</button>
+                <button class="filter-btn" data-filter="emergency">Emergency</button>
+            </div>
+
+            <div class="doctor-grid" id="doctorGrid">
+                <div class="doctor-card fade-in" data-department="cardiology">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Sarah Mitchell</h3>
+                        <p class="doctor-specialty">Cardiology Specialist</p>
+                        <p>15+ years of experience in cardiac care and interventional cardiology.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="orthopedics">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. James Rodriguez</h3>
+                        <p class="doctor-specialty">Orthopedic Surgeon</p>
+                        <p>Specialized in joint replacement and sports medicine with 12 years of experience.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="pediatrics">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Emily Chen</h3>
+                        <p class="doctor-specialty">Pediatrician</p>
+                        <p>Compassionate care for children with 10 years of pediatric experience.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="neurology">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Michael Thompson</h3>
+                        <p class="doctor-specialty">Neurologist</p>
+                        <p>Expert in treating neurological disorders with 18 years of practice.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="cardiology">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Jennifer Lee</h3>
+                        <p class="doctor-specialty">Cardiologist</p>
+                        <p>Board-certified cardiologist specializing in preventive cardiology.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="emergency">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. David Kumar</h3>
+                        <p class="doctor-specialty">Emergency Medicine</p>
+                        <p>Emergency medicine specialist with expertise in critical care.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="pediatrics">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Lisa Anderson</h3>
+                        <p class="doctor-specialty">Pediatric Specialist</p>
+                        <p>Dedicated to child health and development for over 14 years.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="orthopedics">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Robert Williams</h3>
+                        <p class="doctor-specialty">Spine Surgeon</p>
+                        <p>Specialized in spine surgery and minimally invasive procedures.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card fade-in" data-department="neurology">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Amanda Garcia</h3>
+                        <p class="doctor-specialty">Neurologist</p>
+                        <p>Expert in stroke prevention and epilepsy treatment.</p>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.5rem;">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CityCare Hospital</h3>
+                    <p>Providing compassionate care and medical excellence since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><="fas fa-envelope"></i> info@citycarehospital.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const doctorCards = document.querySelectorAll('.doctor-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                doctorCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-department') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
